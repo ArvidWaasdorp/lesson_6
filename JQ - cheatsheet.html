@@ -1,0 +1,56 @@
+
+With jQuery you select (query) HTML elements and perform "actions" on them.
+
+The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+
+Basic syntax is: $(selector).action()
+* A $ sign to define/access jQuery
+* A (selector) to "query (or find)" HTML elements
+* A jQuery action() to be performed on the element(s)
+
+Examples:
+$(this).hide() - hides the current element.
+$("p").hide() - hides all <p> elements.
+$(".test").hide() - hides all elements with class="test".
+$("#test").hide() - hides the element with id="test".
+
+jQuery uses CSS syntax to select elements. You will learn more about the selector syntax in the next chapter of this tutorial.
+
+
+/**/
+The jQuery library exposes its methods and properties via two properties of the window object called jQuery and $. $ is simply an alias for jQuery and it's often employed because it's shorter and faster to write.
+
+
+/*Include JQuery to your page*/
+Add the following script to you page. Preferrely add it as part of the header
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+One big advantage of using the hosted jQuery from Google or Microsoft:
+-------------
+Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
+
+/*Launching Code on Document Ready*/
+To ensure that their code runs after the browser finishes loading the document, many JavaScript programmers wrap their code in an onload function:
+
+window.onload = function() {
+ 
+    alert( "welcome" );
+ 
+};
+
+Unfortunately, the code doesn't run until all images are finished downloading, including banner ads. To run code as soon as the document is ready to be manipulated, jQuery has a statement known as the ready event:
+$( document ).ready(function() {
+ 
+    // Your code here.
+ 
+});
+
+/*Create your own function*/
+
+$(function(){
+
+   // jQuery methods go here...
+
+});
