@@ -16,7 +16,11 @@ body {
 
 p {
   font-size: 14px;
-  padding-top: 120px;
+ 
+}
+
+.normal {
+  padding-top: 80px;
 }
 
 h1 {
@@ -66,7 +70,6 @@ h1 {
 }
 
 #boxes {
-  border: 1px solid #b3b3b3;
   width: 100%;
   position: relative;
   display: none;
@@ -74,7 +77,7 @@ h1 {
 
 .box {
   width: 500px;
-  height: 250px;
+  height: 200px;
   background-color: #FFF;
   display: inline-block;
   border: 1px solid #000;
@@ -85,6 +88,39 @@ h1 {
 }
 
 #iBird {
-  height: 225px;
+  height: 175px;
   display: inline;
+}
+
+
+#dFont {
+  background-color: #f65314;
+}
+
+#dFade {
+  background-color: #7cbb00;
+}
+
+#dBird {
+  background-color: #00a1f1;
+}
+
+#dChangeText {
+  background-color: #7bb3ff;
+}
+
+#dCleanUp {
+  background-color: #9e379f;
+}
+
+#dAddText {
+  background-color: #666547;
+}
+
+#dText {
+  background-color: #fb2e01;
+}
+
+#dDelText {
+  background-color: #ffe28a;
 }

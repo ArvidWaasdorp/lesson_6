@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 6 - Play with jQuerry</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div>
+        <h1>The JQuerry slide show</h1>
+        <button id="clickMe">Click to trigger an effect , and a special</button><br><br>
+      </div>
+
+      <img src="images/jenny_slack.png" id="imgJ" alt="An image of Jenny">
+      <img src="images/nick_slack.png" id="imgN" alt="An image of Jenny">
+
+      <div id="boxes">
+        <div class="box" id="dFont">
+          <p id="pFont" class="normal">
+            Click on me and the font of the text will be larger or smaller. 
+          </p>
+        </div>
+
+        <div class="box" id="dFade">
+          <p id="pFade" class="normal">
+            This text is only visible when; 1) at start, when option 3 is triggered, or when clicked. If visible and it will be triggered the text will vanish.
+          </p>
+        </div>
+
+        <div class="box" id="dBird">
+          <img src="images/image_1.jpg" id="iBird" alt="A bird">
+        </div>
+
+        <div class="box" id="dChangeColor">
+          <p class="normal">
+            Click me to change color
+          </p>
+        </div>
+
+        <div class="box" id="dChangeText">
+          <p id="pChangeText" class="normal">
+            Hello world!
+          </p>
+        </div>
+        <div class="box" id="dCleanUp">
+          <p class="normal">
+            Click me to clean up
+          </p>
+        </div>
+
+        <div class="box" id="dAddText">
+          <p class="normal">
+            Click me to add text to the box to the right &gt;&gt;
+          </p>
+        </div>
+
+        <div class="box" id="dText">
+          <p>
+            Default text
+          </p>
+        </div>
+
+        <div class="box" id="dDelText">
+          <p class="normal">
+            &lt;&lt; Click me to remove all added text
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
