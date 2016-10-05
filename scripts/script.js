@@ -3,12 +3,14 @@ $( document ).ready(function() {
  
   //Just show the button
   $('#clickMe').fadeIn (3000);
+  $('#boxes').slideDown (30);
+
 
   //Action what happends when the button is loaded
   $('button').click(function(){
 
     var random; //A random number to initiate a animation
-    random = Math.floor(Math.random() * 4);
+    random = Math.floor(Math.random() * 5);
 
     switch (random) {
       case 0:
@@ -21,24 +23,53 @@ $( document ).ready(function() {
         increaseFont();
         break;
       case 3:
-        slideDiv();
+        $('#pFade').fadeToggle('slow');
+        break;
+      case 4:
+        $('#iBird').slideToggle('slow');;
+        break;
+      case 5:
         break;
       default:
         break;   
 
     }
 
-/*
-    $('#box1').click(function(){
-      background-color: #e5eecc
-    });
-*/
-
-
     //Debug
     console.log ('Random number: ' + random);
 
   });
+
+  //case 2
+  $('#dFont').click(function(){
+    increaseFont();
+  });
+
+  //case 3
+  $('#dFade').click(function(){
+    $('#pFade').fadeToggle('slow');
+  });
+
+  // case 5
+  $('#dBird').click(function(){
+    $('#iBird').slideToggle('slow');
+  });
+
+  //case 6
+  $('#box2').click(function(){
+    var colors;
+    colors = ['#C5D5EA', '#759EB8', '#7392B7', '#B3C5D7', '#D8E1E9'];
+
+    $(this).delay(3000).css('background-color', '#7392B7');
+
+      $(this).css("background-color", "red");
+ 
+
+  });
+
+
+
+
 });
 
 
@@ -53,8 +84,8 @@ function fadeJenny () {
     //increase the page
     $(this).animate({
         opacity: '0.0',
-        height: '90%',
-        width: '90%'
+        height: '95%',
+        width: '95%'
     });
     
     $(this).fadeOut('slow');      //Fade out
